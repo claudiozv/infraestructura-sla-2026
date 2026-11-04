@@ -1,0 +1,27 @@
+============================================================
+calc_sla.py - Resultado de verificación de SLA
+Caso: Agrícola Valle de Elqui SpA - Septiembre 2026
+============================================================
+
+Métrica            Objetivo          Medido           Veredicto
+------------------------------------------------------------
+disponibilidad     >= 99.9 %         99.63 %          NO CUMPLE
+latencia           <= 30 ms          27.40 ms         CUMPLE
+jitter             <= 10 ms          9.74 ms          CUMPLE
+perdida            <= 0.5 %          (sin datos)      EVIDENCIA INSUFICIENTE
+throughput         >= 180 Mbps       180.75 Mbps      CUMPLE
+tiempo_respuesta   <= 60 min         66 min (máx)     NO CUMPLE
+mttr               <= 4 h            75 min (máx)     CUMPLE
+
+------------------------------------------------------------
+Crédito por disponibilidad : 10 %
+Crédito por otras métricas : 5 %  (tiempo de respuesta)
+Crédito total              : 15 %
+Tope contractual           : 50 %
+Crédito aplicable          : 15 %
+Monto (cargo $1.200.000)   : $180.000 neto
+============================================================
+Nota: Clasificación de eventos, jitter ponderado y tiempos
+de respuesta/MTTR se calcularon manualmente y se documentan
+en el informe.
+============================================================
